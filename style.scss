@@ -1,0 +1,360 @@
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 735px;
+    background-image: url(img/Rectangle\ 15.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 59px;
+        margin-top: 70px;
+        margin-bottom: 16px;
+        color: $colorText;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        color: $colorText;
+        font-weight: 400;
+
+    }
+
+    &__link {
+        color: grey;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        color: $colorText;
+        font-weight: 400;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}
+
+.header {
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+    &__input {
+        width: 288px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid $colorText;
+        border-radius: 20px;
+        background-color: transparent;
+        outline: none;
+        color: $colorText;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+        font-family: inherit;
+    }
+
+    &__input::placeholder {
+        color: $colorText;
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorText;
+        font-weight: 400;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}
+
+.for {
+    padding-top: 64px;
+
+    &__content {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(12, 1fr);
+        margin-top: 32px;
+    }
+
+    &__item {
+        height: 415px;
+        grid-column: span 4;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+        color: $colorText;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item_big {
+        grid-column: span 6;
+    }
+
+    &__item_1 {
+        background-image: url(img/for-1.jpeg);
+    }
+
+    &__item_2 {
+        background-image: url(img/for-2.jpeg);
+    }
+
+    &__item_3 {
+        background-image: url(img/for-3.jpeg);
+    }
+
+    &__item_4 {
+        background-image: url(img/for-4.jpeg);
+    }
+
+    &__item_5 {
+        background-image: url(img/for-5.jpeg);
+    }
+}
+
+.product-box {
+    margin-bottom: 39px;
+    padding-top: 64px;
+}
+
+.product-box__title,
+.for__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: $colorBlack;
+    margin-bottom: 32px;
+}
+
+.product-content {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    justify-content: space-around;
+}
+
+.product {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__name {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorBlack;
+        margin-top: 10px;
+        margin-bottom: 9px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        color: #888888;
+        margin-bottom: 12px;
+    }
+
+    &__box-price {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
+    }
+
+    &__price_sale {
+        text-decoration-line: line-through;
+        color: #888888;
+    }
+
+    &__icons {
+        display: none;
+        position: absolute;
+        top: 10px;
+    }
+
+    &:hover .product__icons {
+        display: block;
+    }
+
+    &__icons_bag {
+        top: 10px;
+        right: 55px;
+    }
+
+    &__icons_heart {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+.link {
+    text-decoration: underline;
+    color: #000;
+}
+
+.footer {
+    background-color: rgb(247, 246, 246);
+    padding-top: 32px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 64px;
+
+    &__content {
+        width: 792px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        display: flex;
+        gap: 129px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__item-li {
+        list-style-type: none;
+    }
+
+    &__item-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__link {
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+    &__icon {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 15px;
+        color: $colorBlack;
+    }
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorBlack;
+}
+
+.email {
+    width: 260px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid $colorGrey;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    color: $colorGrey;
+    outline: none;
+    text-align: left;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-family: inherit;
+}
+
+.btn {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 260px;
+    height: 46px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    color: $colorBlack;
+    font-family: inherit;
+}
+
+@import "cart";
+@import "filter"
