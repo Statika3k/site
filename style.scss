@@ -1,4 +1,6 @@
 @import "vars";
+@import "cart";
+@import "tablet";
 
 * {
     margin: 0;
@@ -28,6 +30,7 @@ body {
         margin-top: 70px;
         margin-bottom: 16px;
         color: $colorText;
+        max-width: 792px;
     }
 
     &__text {
@@ -178,7 +181,6 @@ body {
     row-gap: 56px;
     flex-wrap: wrap;
     margin-top: 32px;
-    justify-content: space-around;
 }
 
 .product {
@@ -376,8 +378,6 @@ h4 {
         background: $colorBlack;
     }
 }
-
-@import "cart";
 
 .modal {
     width: 477px;
