@@ -34,13 +34,13 @@
                 <a class="navigation__link" href="catalog.html">Каталог товаров</a>
             </div>            
             <div class="option">
-                <select class="option__select option__select_1" name="filter" id="filter-form">
-                    <option value="1">Фильтрация</option>
-                </select>
-                <form class="filter-form" action="#" method="get">
-                    <div class="filter-form__conteiner">
-                        <fieldset class="filter-form__fieldset">
-                            <legend class="filter-form__legend">Сроки доставки</legend>
+                <details>
+                    <summary class="option__select option__select_1">Фильтрация</summary>
+
+                    <form class="filter-box" action="#" method="get">
+                    <div class="filter-box__conteiner">
+                        <fieldset class="filter-box__fieldset">
+                            <legend class="filter-box__legend">Сроки доставки</legend>
                             <div class="radio">
                                 <input type="radio" id="any" name="delivery-time" value="any" checked class="radio__input">
                                 <label for="any" class="radio__label">Неважно</label>
@@ -62,8 +62,8 @@
                                 <label for="seven-days" class="radio__label">До 7 дней</label>
                             </div>
                         </fieldset>
-                        <fieldset class="filter-form__fieldset">
-                            <legend class="filter-form__legend">Цена</legend>
+                        <fieldset class="filter-box__fieldset">
+                            <legend class="filter-box__legend">Цена</legend>
                             <div class="range">
                                 <label class="ranger__label" for="price-range">от 0 руб. до 100000 руб.</label>
                                 <div class="range__slider">
@@ -72,8 +72,8 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <fieldset class="filter-form__fieldset">
-                            <legend class="filter-form__legend">Цвет</legend>
+                        <fieldset class="filter-box__fieldset">
+                            <legend class="filter-box__legend">Цвет</legend>
                             <div class="color-options">
                                 <div class="color-options__checkbox">
                                         <input class="checkbox__input" type="checkbox" id="color-white">
@@ -121,8 +121,8 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <fieldset class="filter-form__fieldset filter-form__fieldset_type">
-                            <legend class="filter-form__legend">Тип комнаты</legend>
+                        <fieldset class="filter-box__fieldset filter-box__fieldset_type">
+                            <legend class="filter-box__legend">Тип комнаты</legend>
                             <div class="checkbox">
                                 <input class="checkbox__input" type="checkbox" name="room-type" id="kitchen" value="kitchen" checked>
                                 <label class="checkbox__label" for="kitchen">Кухня и столовая</label>
@@ -158,8 +158,9 @@
                             </div>
                         </fieldset>
                     </div>
-                    <button class="filter-form__btn" type="submit">Применить</button>
-                </form>
+                    <button class="filter-box__btn" type="submit">Применить</button>
+                    </form>
+                </details>
                 <select class="option__select option__select_2" name="select" id="">
                     <option value="2">По популярности</option>
                     <option value="3">Порядок: сперва новые</option>
