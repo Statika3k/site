@@ -116,6 +116,11 @@
         font-weight: 400;
         line-height: 17px;
         background-color: #fff;
+        
+        &:hover {
+            background-color: $colorBlack;
+            color: $colorText;
+        }
 
     }
 
@@ -125,6 +130,11 @@
         padding-left: 20px;
         padding-top: 10px;
         color: rgb(0, 0, 0);
+
+        &:hover {
+            background-color: $colorBlack;
+            color: $colorText;
+        }
     }
 
     &__form {
