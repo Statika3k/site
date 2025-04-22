@@ -90,9 +90,7 @@ li {
     }
 }
 
-.nav {
-    position: relative;
-}
+
 
 .menu {
     display: flex;
@@ -108,6 +106,14 @@ li {
 
     &__link:hover {
         text-decoration: underline;
+    }
+
+    &-nav {
+        position: relative;
+    }
+
+    &-mob {
+        display: none;
     }
 }
 
@@ -492,3 +498,4 @@ h4 {
 @import "catalog";
 @import "cart";
 @import "tablet";
+@import "mobile";

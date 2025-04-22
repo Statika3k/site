@@ -1,4 +1,3 @@
-@import "tablet";
 .catalog {
     height: 400px;
     background-image: url(img/Catalog_top.jpeg);
@@ -402,3 +401,6 @@
     background-position: center;
     border-color: #000;
 }
+
+@import "tablet";
+@import "mobile";
