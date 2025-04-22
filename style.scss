@@ -1,8 +1,4 @@
 @import "vars";
-@import "catalog";
-@import "cart";
-@import "tablet";
-
 * {
     margin: 0;
     padding: 0;
@@ -492,3 +488,7 @@ h4 {
 .modal:hover {
     display: block;
 }
+
+@import "catalog";
+@import "cart";
+@import "tablet";
