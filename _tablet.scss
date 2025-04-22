@@ -16,6 +16,14 @@
     .footer__logo {
         display: none;
     }
+
+    .filter-box {
+        right: -235px;
+    }
+
+    .cart {
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 833px) {
