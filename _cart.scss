@@ -116,6 +116,7 @@
         font-weight: 400;
         line-height: 17px;
         background-color: #fff;
+        transition: background-color 1s;
         
         &:hover {
             background-color: $colorBlack;
@@ -142,21 +143,50 @@
         background: rgb(247, 246, 246);
         height: 556px;
         grid-column: span 4;
-    }
 
-    &__form-title {
-        padding-top: 42px;
-        padding-bottom: 35px;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 29px;
-        text-align: center;
-    }
+        &-title {
+            padding-top: 42px;
+            padding-bottom: 35px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            text-align: center;
+        }
 
-    &__form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 41px;
+        &-group {
+            display: flex;
+            flex-direction: column;
+            gap: 41px;
+        }
+
+        &-finalprice {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            text-align: center;
+            padding-top: 64px;
+        }
+
+        &-btn {
+            width: 290px;
+            height: 41px;
+            box-sizing: border-box;
+            border: 1px solid rgb(4, 4, 4);
+            border-radius: 20px;
+            margin-top: 18px;
+            margin-left: 45px;
+        }
+
+        &-select {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgb(0, 0, 0);
+            padding-left: 76px;
+            padding-top: 10px;
+        }
     }
 
     &__control {
@@ -173,37 +203,7 @@
         line-height: 17px;
         font-family: inherit;
     }
-
-    &__form-finalprice {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 29px;
-        text-align: center;
-        padding-top: 64px;
-    }
-
-    &__form-btn {
-        width: 290px;
-        height: 41px;
-        box-sizing: border-box;
-        border: 1px solid rgb(4, 4, 4);
-        border-radius: 20px;
-        margin-top: 18px;
-        margin-left: 45px;
-    }
-
-    &__form-select {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        color: rgb(0, 0, 0);
-        padding-left: 76px;
-        padding-top: 10px;
-    }
-
 }
 
-@import "tablet";
-@import "mobile";
+// @import "tablet";
+// @import "mobile";

@@ -1,4 +1,5 @@
 @import "vars";
+
 * {
     margin: 0;
     padding: 0;
@@ -96,7 +97,7 @@ li {
     display: flex;
     gap: 32px;
 
-       &__link {
+    &__link {
         text-decoration: none;
         font-size: 16px;
         line-height: 20px;
@@ -230,22 +231,22 @@ li {
         color: #888888;
     }
 
-    &__icons {
+    &__icon {
         display: none;
         position: absolute;
         top: 10px;
     }
 
-    &:hover .product__icons {
+    &:hover .product__icon {
         display: block;
     }
 
-    &__icons_bag {
+    &__icon_bag {
         top: 10px;
         right: 55px;
     }
 
-    &__icons_heart {
+    &__icon_heart {
         right: 10px;
         top: 10px;
     }
@@ -311,18 +312,19 @@ li {
         text-decoration: underline;
     }
 
-    &__icon {
+    &__social {
         display: flex;
         gap: 20px;
         align-items: center;
-    }
 
-    & img {
-        transition: filter 1s;
-    }
-    & img:hover {
+        &-icon {
+            transition: filter 1s;
+        }
+    
+        &-icon:hover {
             filter: brightness(0);
         }
+    }
 
     &__form {
         display: flex;
@@ -375,6 +377,7 @@ h4 {
     font-weight: 400;
     color: $colorBlack;
     font-family: inherit;
+    transition: background-color 1s;
 
     &:hover {
         color: $colorText;
@@ -393,12 +396,12 @@ h4 {
     right: 0;
     display: none;
     z-index: 100;
-   
-         &-box {
-            display: flex;
-            border-bottom: 0.5px solid rgb(202, 205, 216);
-            padding-bottom: 24px;
-            justify-content: space-between;
+
+    &-box {
+        display: flex;
+        border-bottom: 0.5px solid rgb(202, 205, 216);
+        padding-bottom: 24px;
+        justify-content: space-between;
 
         &_bottom {
             border-bottom: none;
@@ -421,7 +424,7 @@ h4 {
     &-item {
         display: flex;
         gap: 24px;
-        
+
         &__content {
             display: flex;
             flex-direction: column;
@@ -490,7 +493,7 @@ h4 {
     }
 }
 
-.menu:hover + .modal,
+.menu:hover+.modal,
 .modal:hover {
     display: block;
 }
