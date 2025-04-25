@@ -944,7 +944,13 @@ h4 {
   border-radius: 20px;
   background: rgb(247, 246, 246);
   height: 556px;
+  width: 379px;
   grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 .cart__form-title {
   padding-top: 42px;
@@ -973,7 +979,6 @@ h4 {
   border: 1px solid rgb(4, 4, 4);
   border-radius: 20px;
   margin-top: 18px;
-  margin-left: 45px;
   transition: all 0.3s ease;
   overflow: hidden;
   position: relative;
@@ -1237,5 +1242,6 @@ h4 {
     grid-column: span 8;
     margin-top: 48px;
     margin-bottom: 48px;
+    width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */

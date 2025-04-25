@@ -225,6 +225,7 @@
         &__btn {
             justify-content: center;
             gap: 14px;
+            
             &-select {
                 width: 164px;
                 font-size: 12px;
@@ -237,8 +238,7 @@
             grid-column: span 8;
             margin-top: 48px;
             margin-bottom: 48px;
+            width: 343px;
         }
-        
-
     }
 }
